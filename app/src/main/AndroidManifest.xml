@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobile_app_final_project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mobile_App_Final_Project">
+        <activity android:name=".MainShortActivity" android:label="짧은글(속담) 타자연습 액티비티"/>
+        <activity android:name=".MainWordActivity" android:label="단어 타자연습 액티비티"/>
+        <activity android:name=".StartActivity" android:exported="true">
+            <!--intent-filter가 있는 액티비티가 시작 액티비티라고 한다. 그래서 StartActivity가 시작이 되도록 옮겨줌-->
+            <intent-filter>
+                <!-- 아마 android.intent.action.MAIN 이게 메인화면이 되도록 하는 문장인 것 같음  -->
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

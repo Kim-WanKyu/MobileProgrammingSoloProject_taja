@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#FFFF80"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFAA"
+            android:textAlignment="center"
+            android:text="타자 결과"
+            android:textSize="40dp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvAccuracyDlg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFAA"
+            android:textAlignment="center"
+            android:text="정확도: 000%"
+            android:textSize="30dp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvTypingKeystrokesDlg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFAA"
+            android:textAlignment="center"
+            android:text="평균 타수: 000타"
+            android:textSize="30dp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+
+    <!--레이아웃 맟춰주기 위한 빈텍스트-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다시시작"
+            android:textSize="30dp"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/btnMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메인화면으로"
+            android:textSize="30dp"
+            android:padding="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

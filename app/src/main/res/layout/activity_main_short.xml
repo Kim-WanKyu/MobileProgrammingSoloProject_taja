@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFF80" >
+
+    <!--정보 출력 부분-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFAA"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정확도: "
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tvAccuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%  평균 타수: "
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tvTypingKeystrokes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="타    "
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:text=" 타자 종료 "/>
+    </LinearLayout>
+
+    <!--상단 부분-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--화면 출력 부분-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--이전 텍스트-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="지난 텍스트"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/tvPrevScreenText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#888888"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tvPrevInputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#888888"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <!--현재 텍스트-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="현재 텍스트"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/tvScreenText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#AAAAAA"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text=""
+                android:padding="5dp"
+                android:layout_margin="10dp" />
+            <TextView
+                android:id="@+id/tvInputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#AAAAAA"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text=""
+                android:padding="5dp"
+                android:layout_margin="10dp" />
+
+            <!--다음 텍스트-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="다음 텍스트"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/tvNextScreenText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text=""
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--하단 부분-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#CCCCCC">
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="top|start"
+            android:background="#EEEEEE"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:hint="여기를 클릭하세요"
+            android:padding="5dp"
+            android:layout_margin="5dp" />
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="확인"
+            android:minWidth="0dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
